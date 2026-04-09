@@ -94,13 +94,14 @@
 }
 
 .projectSection {
-  background:
-    linear-gradient(180deg, rgba(7, 16, 31, 0.99), rgba(9, 20, 42, 0.96)),
-    radial-gradient(
-      circle at 85% 22%,
-      rgba(242, 198, 109, 0.12),
-      transparent 24%
-    );
+  color: #0e0d0d;
+  background: linear-gradient(
+    135deg,
+    #f5f2f2 23%,
+    #fcfeff 41%,
+    #f2eced 100%,
+    #c8d9eb 100%
+  );
 }
 
 .experienceSection {
@@ -217,15 +218,18 @@
   display: block;
 }
 
-.sectionEyebrow,
-.projectVisualKicker,
 .boardEyebrow,
 .boardSectionLabel {
   color: var(--accent-gold);
 }
-
+.sectionEyebrow,
+.projectVisualKicker {
+  color: #0d1729ad;
+}
+.projectVisualKicker::before {
+  color: #111;
+}
 .sectionEyebrow::before,
-.projectVisualKicker::before,
 .boardEyebrow::before,
 .boardSectionLabel::before {
   background: rgba(242, 198, 109, 0.6);
@@ -280,9 +284,9 @@
   color: var(--text-muted-dark);
 }
 
-.sectionSummaryLight {
+/* .sectionSummaryLight {
   color: var(--text-muted-dark);
-}
+} */
 
 .sectionSummaryDark,
 .storyIntroCopy p {
@@ -1244,10 +1248,6 @@
   line-height: 1.8;
 }
 
-.sectionHeader {
-  align-items: end;
-}
-
 .projectShowcase {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.94fr);
@@ -1283,7 +1283,6 @@
 
 .projectIndex {
   margin-top: 0.25rem;
-  color: rgba(248, 246, 242, 0.4);
   font-family: var(--font-mono), monospace;
   font-size: 0.74rem;
   letter-spacing: 0.18em;
@@ -1310,7 +1309,6 @@
   max-width: 40rem;
   font-size: 1.08rem;
   line-height: 1.8;
-  color: rgba(248, 246, 242, 0.78);
 }
 
 .projectMetaRow {
@@ -1321,9 +1319,9 @@
   margin-top: 1.5rem;
 }
 
-.projectMetaRow span {
+/* .projectMetaRow span {
   color: rgba(248, 246, 242, 0.45);
-}
+} */
 
 .projectStack {
   display: flex;
@@ -1336,9 +1334,9 @@
 .capabilityTags span {
   padding: 0.45rem 0.7rem;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(248, 246, 242, 0.72);
+  border: 1px solid rgba(0, 0, 0, 0.31);
+  background: rgba(30, 30, 30, 0.04);
+  /* color: rgba(248, 246, 242, 0.72); */
   font-family: var(--font-mono), monospace;
   font-size: 0.68rem;
   letter-spacing: 0.08em;
@@ -1349,12 +1347,12 @@
   margin-top: 1.45rem;
   padding: 1.2rem 1.25rem;
   border-radius: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.03);
 }
 
 .storyBlock span {
-  color: var(--accent-gold);
+  /* color: var(--accent-gold); */
   font-family: var(--font-mono), monospace;
   font-size: 0.68rem;
   letter-spacing: 0.16em;
@@ -1372,7 +1370,7 @@
 .storyBlock li {
   position: relative;
   padding-left: 1.35rem;
-  color: rgba(248, 246, 242, 0.8);
+  /* color: rgba(248, 246, 242, 0.8); */
   line-height: 1.75;
 }
 
@@ -1390,8 +1388,8 @@
 .projectInsight {
   margin-top: 1.45rem;
   padding: 1.1rem 1.2rem;
-  border-left: 2px solid rgba(242, 198, 109, 0.45);
-  color: rgba(248, 246, 242, 0.7);
+  border-left: 2px solid rgba(39, 39, 39, 0.45);
+  /* color: rgba(248, 246, 242, 0.7); */
   font-style: italic;
   line-height: 1.75;
 }
@@ -1409,10 +1407,14 @@
   padding: 1rem;
   border-radius: 2rem;
   background:
-    linear-gradient(180deg, rgba(15, 23, 43, 0.96), rgba(12, 22, 44, 0.78)),
+    linear-gradient(
+      180deg,
+      rgba(194, 194, 194, 0.96),
+      rgba(180, 180, 180, 0.78)
+    ),
     radial-gradient(
       circle at 80% 18%,
-      rgba(110, 158, 255, 0.12),
+      rgba(255, 247, 231, 0.651),
       transparent 20%
     );
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1429,17 +1431,17 @@
   line-height: 1.05;
 }
 
-.inlineMuted {
+/* .inlineMuted {
   color: rgba(248, 246, 242, 0.42);
-}
+} */
 
 .projectImageFrame,
 .capabilityPreviewFrame {
   margin-top: 1.25rem;
   overflow: hidden;
   border-radius: 1.4rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(5, 5, 5, 0.1);
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .projectPreviewImage,
@@ -1459,7 +1461,7 @@
   padding: 0.9rem 1rem;
   border-radius: 1.2rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(0, 0, 0, 0.03);
 }
 
 .metricChip strong {
@@ -1470,7 +1472,7 @@
 .metricChip span {
   display: block;
   margin-top: 0.35rem;
-  color: rgba(248, 246, 242, 0.52);
+  /* color: rgba(248, 246, 242, 0.52); */
   font-family: var(--font-mono), monospace;
   font-size: 0.65rem;
   letter-spacing: 0.12em;
@@ -1481,8 +1483,8 @@
   margin-top: 1rem;
   padding: 1rem;
   border-radius: 1.4rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.03);
 }
 
 .architectureFlow {
@@ -2180,7 +2182,7 @@
 .expDetailCompany {
   margin: 1rem 0 0;
   font-family: var(--font-display), serif;
-  font-size: clamp(1.4rem, 2.8vw, 2.4rem);
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
   line-height: 0.98;
 }
 
@@ -2732,6 +2734,7 @@
     top: 0.7rem;
     width: calc(100vw - 1rem);
     padding-inline: 1rem;
+    padding: 0.5rem 1.2rem;
   }
 
   .topnav {
@@ -2795,6 +2798,7 @@
   }
   .sectionSummaryLight {
     line-height: 1.5;
+    margin: 2rem 0;
   }
   .projectHook {
     font-size: 0.9rem;
@@ -2873,7 +2877,7 @@
   }
   .expDetailCard {
     border-radius: 0.7rem;
-    padding: 0.7rem;
+    padding: 1rem;
   }
   .expDetailMeta {
     gap: 0;
@@ -2882,14 +2886,14 @@
   .expDetailSummary {
     margin: 0.6rem 0 0;
     line-height: 1.2;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .expAchievement {
-    font-size: 0.7rem;
+    font-size: 1rem;
     line-height: 1.65;
   }
   .expAchievement span {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   .expAchieveIcon {
     font-size: 0.5rem;
@@ -2906,7 +2910,7 @@
     border-radius: 1rem;
   }
   .capCardOutcome {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     line-height: 1.2;
   }
   .capCardProofText {
@@ -2916,8 +2920,11 @@
   }
   .capExpBody {
     gap: 0.5rem;
+    grid-template-columns: 1fr;
   }
-
+  .capCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .educationCard {
     border-radius: 1rem;
     padding: 0.8rem;
@@ -2934,6 +2941,9 @@
   .educationCard p {
     line-height: 1.1;
     font-size: 1.1rem;
+  }
+  .insightColumn {
+    flex-direction: column;
   }
   .heroCopy {
     padding-top: 0;
@@ -2976,7 +2986,9 @@
     flex-direction: column;
     align-items: start;
   }
-
+  .bentoTagline {
+    margin: 2rem 0;
+  }
   .contactQuickLinks a,
   .skillTab {
     width: 100%;
