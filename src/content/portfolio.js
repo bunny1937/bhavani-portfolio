@@ -120,6 +120,61 @@ export const portfolio = {
         "This project proved that a technically invisible service — finding water underground — can be made legible and trustworthy through the right combination of animation, structure, and content ownership.",
     },
     {
+      id: "trio-eyewear",
+      index: "02",
+      name: "Trio Eyewear",
+      label: "E-commerce showcase with admin CMS",
+      timeframe: "Nov 2025",
+      hook: "A sunglasses retailer had a physical store full of premium frames but no way to show them online. The brief was to build something that looked and felt like a real e-commerce store — without checkout.",
+      summary:
+        "Designed and developed a full e-commerce showcase website for a sunglasses brand, featuring animated product browsing, gender and frame-type filtering, promotional banners, and an admin panel for complete inventory and content management — shipped in under one week.",
+      preview: "/previews/trio-eyewear.png",
+      previewAlt:
+        "A premium eyewear e-commerce website with animated hero, gender category cards, frame type filters, and a product showcase grid.",
+      stack: [
+        "Next.js",
+        "MongoDB",
+        "Framer Motion",
+        "Cloudinary",
+        "CSS Modules",
+        "Mongoose",
+        "App Router",
+        "Responsive UI",
+      ],
+      liveUrl: "https://trioeyewear.vercel.app",
+      metrics: [
+        { value: "1wk", label: "concept to deployment" },
+        { value: "100+", label: "frames showcased" },
+      ],
+      problem: [
+        "The client had an active sunglasses retail business with a wide inventory but no digital presence to display it — customers had no way to browse collections before visiting the store.",
+        "They needed something that looked and performed like a real e-commerce platform, but without payment or delivery infrastructure — purely a showcase with admin control over content.",
+      ],
+      thinking: [
+        "Chose to build the full e-commerce visual experience first — hero, category cards, filter browsing, product grid — so the site felt credible and professional before a single product was added.",
+        "Structured the admin panel to give the client complete independence: add products, update inventory, push banners, and run promotions without ever needing a developer.",
+      ],
+      system: [
+        "Animated hero section with stats (100+ frames, 50+ brands, 10K+ customers) and dual CTAs driving users into the catalogue.",
+        "Gender-based category cards (Men's, Women's, Unisex) and frame-type grid (Aviator, Wayfarer, Round, Rectangle, Square, Oval, Cat-Eye, Oversized) with URL-based filtering.",
+        "Promotional banner system with hero, promo, and feature banner types — fully manageable from the admin panel.",
+        "Admin panel with product CRUD, bulk upload via Cloudinary (auto-converted to WebP), banner management, and a database seeder for quick setup.",
+        "5 switchable CSS color palettes and a persistent light/dark mode toggle for brand customization without code changes.",
+      ],
+      impact: [
+        "The client went from zero digital presence to a fully browsable, professional online catalogue live within one week.",
+        "The owner independently manages the entire product inventory, banners, and promotions through a protected admin dashboard.",
+      ],
+      architecture: [
+        "Hero and category sections drive discovery before product browsing begins",
+        "Filter system uses URL params — shareable and bookmark-friendly product views",
+        "Admin CMS handles products, banners, and promotions as separate managed layers",
+        "Cloudinary pipeline handles image upload, optimization, and WebP conversion automatically",
+      ],
+      insight:
+        "This project showed that the line between a showcase site and a commerce platform is thinner than it looks — the right structure and admin tooling can deliver the full retail experience without a single transaction.",
+    },
+    {
       id: "sanjeevani",
       index: "02",
       name: "Sanjeevani Service",
@@ -165,7 +220,7 @@ export const portfolio = {
     },
     {
       id: "omg-store",
-      index: "03",
+      index: "04",
       name: "OMG Store E-Commerce",
       label: "E-commerce platform",
       timeframe: "November 2024 - March 2025",
@@ -214,7 +269,7 @@ export const portfolio = {
     },
     {
       id: "robokart",
-      index: "04",
+      index: "05",
       name: "Robokart Training Labs",
       label: "Technical training program",
       timeframe: "August 2024",
@@ -270,6 +325,16 @@ export const portfolio = {
       relatedProject: "M.M.S Water Diviners",
       preview: "/previews/mmswaterdiviners.png",
       tags: ["CMS", "NextAuth", "Admin dashboard"],
+    },
+    {
+      name: "Rapid client delivery",
+      outcome:
+        "Ships complete, polished products under tight deadlines without cutting corners on design or functionality.",
+      proof:
+        "Trio Eyewear went from brief to deployed e-commerce showcase in under one week, with admin panel, animations, and mobile responsiveness all included.",
+      relatedProject: "Trio Eyewear",
+      preview: "/previews/trio-eyewear.png",
+      tags: ["Fast delivery", "Framer Motion", "Admin CMS"],
     },
     {
       name: "Product framing",
@@ -331,6 +396,15 @@ export const portfolio = {
         "Built a full-stack marketing website with scroll-driven animation, owner-managed CMS, review moderation, and local SEO infrastructure.",
       changed:
         "A referral-only business gained a credible digital presence, enabling new clients to discover and evaluate the service before making contact.",
+    },
+    {
+      timeframe: "Nov 2025",
+      role: "Freelance Full Stack Developer",
+      company: "Trio Eyewear",
+      built:
+        "Built a full e-commerce showcase platform for a sunglasses brand — animated storefront, gender and frame-type filtering, promotional banner system, and a complete admin panel for inventory and content management.",
+      changed:
+        "The client gained a professional digital storefront to showcase their entire inventory, with full independent control over products, banners, and promotions — delivered in under one week.",
     },
     {
       timeframe: "Feb 2026",

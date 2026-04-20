@@ -6,11 +6,12 @@ import styles from "@/app/page.module.css";
 
 // Map experience company → capability indices it strongly relates to
 const expToCapabilities = {
-  "M.M.S Water Diviners": [1, 3, 5], // product framing, backend execution
-  "Sanjeevani Services": [0, 2], // product framing, backend execution
-  "OMG Store": [1, 3], // interface systems, client collaboration
+  "M.M.S Water Diviners": [0, 1, 2, 3, 5], // product framing, backend execution
+  "Trio Eyewear": [0, 1, 2, 3, 4], // interface systems, client collaboration
+  "Sanjeevani Services": [0, 1, 2, 4, 5], // product framing, backend execution
+  "OMG Store": [0, 1, 2, 3, 4], // interface systems, client collaboration
   "Robokart Company": [4], // technical storytelling
-  "Sahu Technologies": [1, 4], // interface systems, technical storytelling
+  "Sahu Technologies": [1, 3, 4, 6], // interface systems, technical storytelling
 };
 
 export function CapabilityExplorer({ capabilities, experience }) {

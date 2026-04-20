@@ -74,6 +74,38 @@ const richExperience = [
     statLabel: "Expertise Made Visible",
   },
   {
+    company: "Trio Eyewear",
+    role: "Freelance Full Stack Developer",
+    period: "Nov 2025",
+    timeframe: "2025",
+    type: "Freelance",
+    accent: "#213448",
+    summary:
+      "Built a full e-commerce showcase website for a sunglasses retailer — inventory display, style browsing, and a complete admin panel, all in one week.",
+    achievements: [
+      {
+        icon: "🕶️",
+        text: "E-commerce-style storefront to showcase frames across Men's, Women's, and Unisex collections",
+      },
+      {
+        icon: "🗂️",
+        text: "Admin panel with full CRUD — add, edit, delete products, manage banners and promotions independently",
+      },
+      {
+        icon: "🎨",
+        text: "switchable color palettes with light/dark mode toggle persisted via localStorage",
+      },
+      {
+        icon: "⚡",
+        text: "Delivered a polished, animated, mobile-responsive product in under 1 week",
+      },
+    ],
+    tech: ["Next.js", "MongoDB", "Framer Motion", "Cloudinary", "CSS Modules"],
+    link: "https://trioeyewear.vercel.app",
+    stat: "1wk",
+    statLabel: "Full Build Turnaround",
+  },
+  {
     company: "Sanjeevani Services",
     role: "Web Developer",
     period: "Jul 2025 – Aug 2025",
