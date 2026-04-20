@@ -1821,6 +1821,7 @@
     );
   color: var(--text-light);
   box-shadow: var(--shadow-lg);
+  align-content: center;
 }
 
 .contactSuccessIcon {

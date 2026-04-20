@@ -42,6 +42,38 @@ import styles from "./page.module.css";
 // Rich experience data (merged from Experience.js)
 const richExperience = [
   {
+    company: "M.M.S Water Diviners",
+    role: "Freelance Full Stack Developer",
+    period: "2026",
+    timeframe: "2026",
+    type: "Freelance",
+    accent: "#01696f",
+    summary:
+      "Built a full digital presence for a 10-year-old geophysical survey business that had none.",
+    achievements: [
+      {
+        icon: "🌊",
+        text: "Scroll-driven canvas animation hero simulating soil layers and water detection",
+      },
+      {
+        icon: "🔐",
+        text: "NextAuth-protected CMS — owner manages content, reviews, and media independently",
+      },
+      {
+        icon: "⭐",
+        text: "MongoDB-backed review pipeline with moderation layer before public display",
+      },
+      {
+        icon: "📍",
+        text: "Local SEO infrastructure via next-sitemap targeting Kankavli and surrounding areas",
+      },
+    ],
+    tech: ["Next.js", "MongoDB", "NextAuth", "UploadThing", "CSS Modules"],
+    link: "https://mmswaterdiviners.in",
+    stat: "10yr",
+    statLabel: "Expertise Made Visible",
+  },
+  {
     company: "Sanjeevani Services",
     role: "Web Developer",
     period: "Jul 2025 – Aug 2025",
@@ -70,7 +102,7 @@ const richExperience = [
     statLabel: "Efficiency Gained",
   },
   {
-    company: "Freelance",
+    company: "OMG Store",
     role: "Web Developer",
     period: "Nov 2024 – Mar 2025",
     timeframe: "2024–2025",
@@ -94,7 +126,7 @@ const richExperience = [
       { icon: "📈", text: "35% boost in customer engagement post-launch" },
     ],
     tech: ["Next.js", "React.js", "MongoDB", "Firebase"],
-    link: "https://https://omg-store27.vercel.app/",
+    link: "https://omg-store27.vercel.app/",
     stat: "35%",
     statLabel: "Engagement Up",
   },

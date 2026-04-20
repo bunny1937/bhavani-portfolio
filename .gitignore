@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+REPO_CONTEXT.txt
+all_changes.patch
+DEBUG_SMART.txt

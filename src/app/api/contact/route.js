@@ -10,7 +10,7 @@ const TO = "bhavaninehra@gmail.com"; // your inbox
 
 export async function POST(request) {
   try {
-    const { name, company, message } = await request.json();
+    const { name, email, company, message } = await request.json();
 
     // Basic server-side validation
     if (!name?.trim() || !message?.trim()) {
@@ -23,14 +23,15 @@ export async function POST(request) {
     const { data, error } = await resend.emails.send({
       from: FROM,
       to: TO,
-      reply_to: undefined, // no sender email collected — omit
+      reply_to: email, // no sender email collected — omit
       subject: `Portfolio inquiry from ${name.trim()}`,
       text: [
         company ? `Company / project: ${company.trim()}` : "",
         "",
+        "Message:",
         message.trim(),
         "",
-        `From: ${name.trim()}`,
+        `From: ${name.trim()} (${email})`,
       ]
         .filter((line, i, arr) => !(line === "" && arr[i - 1] === ""))
         .join("\n"),
@@ -40,9 +41,20 @@ export async function POST(request) {
           <h2 style="margin:0 0 1rem;font-size:1.4rem">
             New message from <span style="color:#c9a84c">${escHtml(name)}</span>
           </h2>
+          <p style="margin:0 0 0.5rem">
+  <strong>Email:</strong> ${escHtml(email)}
+</p>
           ${company ? `<p style="margin:0 0 0.5rem"><strong>Company / project:</strong> ${escHtml(company)}</p>` : ""}
-          <p style="margin:1rem 0 0.5rem;white-space:pre-wrap;line-height:1.7">${escHtml(message)}</p>
-          <hr style="margin:1.5rem 0;border:none;border-top:1px solid #e4dccb"/>
+${
+  message
+    ? `
+  <p style="margin:1rem 0 0.3rem"><strong>Message:</strong></p>
+  <p style="margin:0 0 0.5rem;white-space:pre-wrap;line-height:1.7">
+    ${escHtml(message)}
+  </p>
+`
+    : ""
+}          <hr style="margin:1.5rem 0;border:none;border-top:1px solid #e4dccb"/>
           <p style="color:#888;font-size:0.8rem">Sent via bhavani-portfolio contact form</p>
         </div>
       `,

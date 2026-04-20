@@ -66,18 +66,73 @@ export const portfolio = {
   ],
   projects: [
     {
-      id: "sanjeevani",
+      id: "mms-water-diviners",
       index: "01",
+      name: "M.M.S Water Diviners",
+      label: "Business website with CMS",
+      timeframe: "Feb 2026",
+      hook: "A geophysical water survey expert with 10 years of field credibility had no digital presence. The challenge was to build a site that earned trust before a single call was made.",
+      summary:
+        "Designed and built a full-stack marketing website for a groundwater survey business, featuring a scroll-driven animated hero, owner-controlled CMS, live customer reviews, and SEO infrastructure — turning a word-of-mouth operation into a credible digital service.",
+      preview: "/previews/mmswaterdiviners.png",
+      previewAlt:
+        "A professional website for a geophysical water survey company with animated hero, services section, and contact interface.",
+      stack: [
+        "Next.js",
+        "MongoDB",
+        "NextAuth",
+        "UploadThing",
+        "App Router",
+        "CSS Modules",
+        "Responsive UI",
+      ],
+      liveUrl: "https://mmswaterdiviners.in",
+      metrics: [
+        { value: "10yr", label: "expertise made visible" },
+        { value: "5", label: "service offerings showcased" },
+        { value: "1", label: "owner-managed CMS" },
+      ],
+      problem: [
+        "The business had a decade of successful borewell projects and strong local reputation, but no way for potential clients to find or evaluate them online.",
+        "Without a credible web presence, trust had to be built entirely through referrals — limiting reach and making every new client relationship start from zero.",
+      ],
+      thinking: [
+        "Identified that trust and locality were the two things a client needed to feel before making a call — so the site was structured to establish both immediately.",
+        "Chose scroll-driven animation for the hero to turn the underground scanning process into a visual experience, making an invisible service feel tangible and scientific.",
+      ],
+      system: [
+        "Scroll-triggered geophysical animation hero built with canvas and CSS, simulating soil layers, drill depth, and water detection to explain the service without words.",
+        "Admin CMS with NextAuth-protected login, allowing the owner to update content, manage customer reviews, and upload assets without touching code.",
+        "MongoDB-backed review system with a moderation layer so only approved testimonials appear publicly.",
+        "UploadThing integration for image handling, next-sitemap for SEO, and a structured contact flow with WhatsApp CTA for direct lead conversion.",
+      ],
+      impact: [
+        "Transformed a referral-only business into one with a searchable, credible online presence covering Kankavli and surrounding areas.",
+        "The owner can independently manage site content and reviews through a protected dashboard, removing any ongoing developer dependency.",
+      ],
+      architecture: [
+        "Animated hero communicates the service before any text is read",
+        "CMS layer gives the owner full editorial control post-launch",
+        "Review pipeline handles submission, moderation, and display",
+        "SEO and sitemap infrastructure built for local search visibility",
+      ],
+      insight:
+        "This project proved that a technically invisible service — finding water underground — can be made legible and trustworthy through the right combination of animation, structure, and content ownership.",
+    },
+    {
+      id: "sanjeevani",
+      index: "02",
       name: "Sanjeevani Service",
       label: "Operations dashboard",
       timeframe: "July 2025 - August 2025",
       hook: "A service business ran for 20 years on paper. The challenge was to digitize operations without breaking the team's habits.",
       summary:
         "Built a role-aware service management dashboard that connected clients, reminders, expenses, labour, invoices, and property timelines into one operating system.",
-      preview: "/previews/sanjeevani-dashboard.svg",
+      preview: "/previews/sanjeevani-dashboard.png",
       previewAlt:
         "A dashboard interface for service management with clients, reminders, invoices, and operational metrics.",
-      stack: ["Next.js", "MongoDB", "Firebase", "App Router", "Responsive UI"],
+      stack: ["Next.js", "MongoDB", "API", "App Router", "Responsive UI"],
+      liveUrl: "https://sanjeeevani-services-demo.vercel.app",
       metrics: [
         { value: "40%", label: "efficiency gain" },
         { value: "20yr", label: "offline history digitized" },
@@ -110,20 +165,20 @@ export const portfolio = {
     },
     {
       id: "omg-store",
-      index: "02",
-      name: "OMG Store Commerce",
+      index: "03",
+      name: "OMG Store E-Commerce",
       label: "E-commerce platform",
       timeframe: "November 2024 - March 2025",
       hook: "A clothing brand had demand on social, but no store to capture it. The brief was simple: turn attention into a buying experience.",
       summary:
         "Designed and developed a full-stack storefront that helped the brand shift from manual DM selling to a polished digital commerce channel.",
-      preview: "/previews/omg-store.svg",
+      preview: "/previews/omg-store.png",
       previewAlt:
         "A modern ecommerce interface showing product collections, shopping actions, and a mobile checkout preview.",
       stack: [
         "React.js",
         "Node.js",
-        "MongoDB",
+        "Firebase",
         "REST APIs",
         "Responsive Design",
       ],
@@ -159,7 +214,7 @@ export const portfolio = {
     },
     {
       id: "robokart",
-      index: "03",
+      index: "04",
       name: "Robokart Training Labs",
       label: "Technical training program",
       timeframe: "August 2024",
@@ -206,6 +261,16 @@ export const portfolio = {
     },
   ],
   capabilities: [
+    {
+      name: "Content ownership systems",
+      outcome:
+        "Hands non-technical clients full control over their site after launch, with no developer dependency.",
+      proof:
+        "M.M.S Water Diviners ships with a NextAuth-protected CMS so the owner manages content, reviews, and media independently.",
+      relatedProject: "M.M.S Water Diviners",
+      preview: "/previews/mmswaterdiviners.png",
+      tags: ["CMS", "NextAuth", "Admin dashboard"],
+    },
     {
       name: "Product framing",
       outcome:
@@ -260,6 +325,15 @@ export const portfolio = {
   experience: [
     {
       timeframe: "2025",
+      role: "Freelance Full Stack Developer",
+      company: "M.M.S Water Diviners",
+      built:
+        "Built a full-stack marketing website with scroll-driven animation, owner-managed CMS, review moderation, and local SEO infrastructure.",
+      changed:
+        "A referral-only business gained a credible digital presence, enabling new clients to discover and evaluate the service before making contact.",
+    },
+    {
+      timeframe: "Feb 2026",
       role: "Web Developer",
       company: "Sanjeevani Services",
       built:
@@ -267,6 +341,7 @@ export const portfolio = {
       changed:
         "Manual operational overhead dropped, reporting became faster, and the business gained a digital operating layer.",
     },
+
     {
       timeframe: "2024 - 2025",
       role: "Freelance Full Stack Developer",

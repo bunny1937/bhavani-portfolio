@@ -6,8 +6,9 @@ import styles from "@/app/page.module.css";
 
 // Map experience company → capability indices it strongly relates to
 const expToCapabilities = {
+  "M.M.S Water Diviners": [1, 3, 5], // product framing, backend execution
   "Sanjeevani Services": [0, 2], // product framing, backend execution
-  Freelance: [1, 3], // interface systems, client collaboration
+  "OMG Store": [1, 3], // interface systems, client collaboration
   "Robokart Company": [4], // technical storytelling
   "Sahu Technologies": [1, 4], // interface systems, technical storytelling
 };

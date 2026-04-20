@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "@/app/page.module.css";
 
-const INITIAL = { name: "", company: "", message: "" };
+const INITIAL = { name: "", email: "", company: "", message: "" };
 
 export function ContactForm({ email, resumeHref }) {
   const [form, setForm] = useState(INITIAL);
@@ -94,7 +94,19 @@ export function ContactForm({ email, resumeHref }) {
             disabled={status === "loading"}
           />
         </div>
-
+        <div className={styles.contactField}>
+          <label htmlFor="email">Your Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            value={form.email}
+            onChange={handleChange}
+            placeholder="Your Email for Contact?"
+            required
+            disabled={status === "loading"}
+          />
+        </div>
         <div className={styles.contactField}>
           <label htmlFor="company">Company or project</label>
           <input
